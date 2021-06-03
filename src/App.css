@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.lazyload{
+  display: inline-block;
+}
+
+
+/* 过渡的入场动画 */
+.r-enter{
+  opacity: 0;
+}
+.r-enter-active{
+  transition: 2s;
+  opacity: 1;
+}
+.r-enter-done{
+  opacity: 1;
+}
+
+/* 过渡的出场动画 */
+.r-exit{
+  opacity: 1;
+}
+.r-exit-active{
+  transition: 2s;
+  opacity: 0;
+} 
+.r-exit-done{
+  opacity: 0;
+}
